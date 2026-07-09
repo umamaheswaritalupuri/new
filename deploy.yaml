@@ -2,17 +2,17 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: zomato
-  name: zomato-deploy
+    app: nginx
+  name: nginx-deploy
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
-      app: zomato
+      app: nginx
   template:
     metadata:
       labels:
-        app: zomato
+        app: nginx
     spec:
       containers:
       - name: cont1
@@ -28,6 +28,6 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: zomato
+    app: nginx
   ports:
     - port: 80
