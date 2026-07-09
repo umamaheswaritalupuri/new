@@ -7,7 +7,7 @@ spec:
   project: default    
   source:
     repoURL: https://github.com/umamaheswaritalupuri/new.git   
-    targetRevision: HEAD                             # Branch, tag, or commit
+    targetRevision: main                             # Branch, tag, or commit
     path: /childapps                      # Path inside repo
   destination:
     server: https://kubernetes.default.svc            # Cluster API server
