@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/umamaheswaritalupuri/new.git   
     targetRevision: main                             # Branch, tag, or commit
-    path: /childapps                      # Path inside repo
+    path: childapps                      # Path inside repo
   destination:
     server: https://kubernetes.default.svc            # Cluster API server
     namespace: argocd                           # Target namespace
