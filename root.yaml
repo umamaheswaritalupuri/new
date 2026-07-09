@@ -11,7 +11,7 @@ spec:
     path: /childapps                      # Path inside repo
   destination:
     server: https://kubernetes.default.svc            # Cluster API server
-    namespace: default                           # Target namespace
+    namespace: argocd                           # Target namespace
   syncPolicy:
     automated:                                        # Optional: enable auto-sync
       prune: true                                     # Remove resources not in Git
