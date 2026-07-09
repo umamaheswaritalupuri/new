@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/umamaheswaritalupuri/new.git   
     targetRevision: main                             # Branch, tag, or commit
-    path: folder2                           # Path inside repo
+    path: ./folder2                           # Path inside repo
   destination:
     server: https://kubernetes.default.svc            # Cluster API server
     namespace: prometheus                           # Target namespace

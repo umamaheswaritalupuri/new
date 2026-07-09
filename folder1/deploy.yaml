@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: dhi.io/tomcat:11-jdk25-debian-dev
+        image: tomcat:9.0.120-jdk25-temurin-noble        
         ports:
         - containerPort: 8080
 ---
