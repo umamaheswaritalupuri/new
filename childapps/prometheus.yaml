@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: prometheus
+  namespace: argocd  
+spec:
+  project: default    
+  source:
+    repoURL: https://github.com/umamaheswaritalupuri/new.git   
+    targetRevision: HEAD                             # Branch, tag, or commit
+    path: /folder2                           # Path inside repo
+  destination:
+    server: https://kubernetes.default.svc            # Cluster API server
+    namespace: prometheus                           # Target namespace
+  syncPolicy:
+    automated:                                        # Optional: enable auto-sync
+      prune: true                                     # Remove resources not in Git
+      selfHeal: true
