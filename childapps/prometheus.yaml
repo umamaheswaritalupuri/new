@@ -16,3 +16,5 @@ spec:
     automated:                                        # Optional: enable auto-sync
       prune: true                                     # Remove resources not in Git
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
