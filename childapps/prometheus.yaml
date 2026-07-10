@@ -11,7 +11,7 @@ spec:
     path: ./folder2                           # Path inside repo
   destination:
     server: https://kubernetes.default.svc            # Cluster API server
-    namespace: prometheus                           # Target namespace
+    namespace: jenkins                           # Target namespace
   syncPolicy:
     automated:                                        # Optional: enable auto-sync
       prune: true                                     # Remove resources not in Git
